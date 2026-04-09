@@ -99,8 +99,8 @@ h1 {
 
 .topo {
     display: flex;
-    justify-content: space-between; /* título de um lado, menu do outro */
-    align-items: center;            /* centraliza verticalmente */
+    justify-content: space-between;
+    align-items: center;            
     padding: 15px 30px;
   }
 
