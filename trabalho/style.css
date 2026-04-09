@@ -1,20 +1,237 @@
+p {
+    font-family: "Quicksand", sans-serif;
+    color: aliceblue;
+    font-size: 20px;
+    text-shadow:
+
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+}
+
+h2 {
+
+    font-family: "Playewrite IE", cursive;
+    animation: 5s mudaCor linear infinite;
+    text-shadow:
+
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+}
+
+@keyframes mudaCor {
+
+    0% {
+        color: yellow;
+    }
+
+    25% {
+        color: rgb(4, 197, 231);
+    }
+
+    50% {
+        color: red;
+    }
+
+    75% {
+        color: rgb(233, 7, 233);
+    }
+
+    100% {
+        color: greenyellow;
+    }
+
+}
+
 body {
 
     margin: 0;
     padding: 0;
+    margin-top: 0;
+    padding-top: 0;
+    background-image: url(https://wallpapers.com/images/hd/2440x1440-league-of-legends-background-cu011y4q93frp69f.jpg);
+
 }
 
-abbr{
+abbr {
 
     text-decoration: none;
 }
 
+h1 {
 
+    animation: 5s titulo linear infinite;
+    text-shadow:
 
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+}
 
-#titulo_principal {
+@keyframes titulo {
 
-    text-align: center;
+    0% {
+        color: yellow;
+    }
 
+    25% {
+        color: rgb(4, 197, 231);
+    }
+
+    50% {
+        color: red;
+    }
+
+    75% {
+        color: rgb(233, 7, 233);
+    }
+
+    100% {
+        color: greenyellow;
+    }
 
 }
+
+
+.topo {
+    display: flex;
+    justify-content: space-between; /* título de um lado, menu do outro */
+    align-items: center;            /* centraliza verticalmente */
+    padding: 15px 30px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  
+  nav a:hover {
+    color: yellow;
+  }
+
+.resumo {
+
+    margin: 0;
+    width: 180px;
+}
+
+.conteiner {
+
+    padding-top: 140px;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#arthur {
+
+    width: 200px;
+    border-radius: 50%;
+}
+
+.imagem_arthur {
+
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-top: 10px;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.conteiner2 {
+
+    padding-top: 20px;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.resumo2 {
+
+    margin: 0;
+    width: 200px;
+}
+
+.nav_curriculo{
+
+    justify-content: center;
+}
+
+#curriculo{
+
+    text-decoration: none;
+    color: white;
+    width: 300px;
+    text-align: center;
+    display: block;
+
+}
+
+
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+  }
+  
+  input, select, textarea {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  .tabela-servicos {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .tabela-servicos th,
+  .tabela-servicos td {
+    border: 1px solid white;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .tabela-servicos th {
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+  }
+  
+  .tabela-servicos tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }

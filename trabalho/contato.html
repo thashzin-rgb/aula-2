@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>contato</title>
+</head>
+<body>
+    <nav class="nav_curriculo">
+        <a href="index.html"> Principal </a>
+        <a href="servicos.html"> Serviços </a>
+        <a href="github.html"> GitHub</a>
+        </nav>
+    
+
+        <h2>Contato</h2>
+
+<form class="formulario">
+
+  <!-- Nome completo -->
+  <label>Nome completo:</label>
+  <input type="text" name="nome" placeholder="Digite seu nome completo" required>
+
+  <!-- Telefone -->
+  <label>Telefone:</label>
+  <input type="tel" name="telefone" placeholder="(27) 99999-9999" required>
+
+  <!-- E-mail -->
+  <label>E-mail:</label>
+  <input type="email" name="email" placeholder="exemplo@email.com" required>
+
+  <!-- Pessoa física ou jurídica -->
+  <label>Tipo de pessoa:</label>
+  <select name="tipo_pessoa" required>
+    <option value="">Selecione</option>
+    <option value="fisica">Pessoa Física</option>
+    <option value="juridica">Pessoa Jurídica</option>
+  </select>
+
+  <!-- Melhor horário -->
+  <label>Melhor horário para contato:</label>
+  <input type="radio" name="horario" value="manha"> Manhã
+  <input type="radio" name="horario" value="tarde"> Tarde
+  <input type="radio" name="horario" value="noite"> Noite
+
+  <!-- Tipo de serviço -->
+  <label>Tipo de serviço desejado:</label>
+  <select name="servico" required>
+    <option value="">Selecione</option>
+    <option value="site_simples">Site simples</option>
+    <option value="site_avancado">Site avançado</option>
+    <option value="manutencao">Manutenção</option>
+    <option value="outros">Outros</option>
+  </select>
+
+  <!-- Checkbox -->
+  <label>Serviços adicionais:</label>
+  <input type="checkbox" name="extra1"> Design
+  <input type="checkbox" name="extra2"> SEO
+  <input type="checkbox" name="extra3"> Hospedagem
+
+  <!-- Descrição -->
+  <label>Descrição do projeto:</label>
+  <textarea name="descricao" rows="5" placeholder="Descreva o que você precisa..." required></textarea>
+
+  <!-- Botão -->
+  <button type="submit">Enviar</button>
+
+</form>
+</body>
+</html>
